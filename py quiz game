@@ -1,0 +1,34 @@
+print("Hello welcome to Applitude Math Quiz Game! ")
+score=1
+reply=input("Do you want to play? ")
+if reply.lower!="yes":
+    quit()
+
+ques1=int(input("what is 2+2? :"))
+if ques1== 4:
+    print("Correct!")
+    score+=1
+else:
+    print("Incorrect!") 
+
+ques2=int(input("what is 1/4 of 100 is? : "))
+if ques2== 25:
+    print("Correct!")
+    score+=1
+else:
+    print("Incorrect!")
+
+ques3=int(input("what comes next in this series: 1,3,6,11,__  ? : "))
+if ques3==18:
+    print("Correct!")
+else:
+    print("Incorrect!")
+
+print(f"You got {score} question correct")
+if score is 1:
+    print('You have fair level IQ.')
+elif score is 2:
+    print("You have average level IQ.")
+elif score is 3:
+    print("You have genious level IQ.")
+print("Thank you")
